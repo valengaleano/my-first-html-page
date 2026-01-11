@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="shortcut icon" href="Imagenes/formularios-de-google.png" type="image/x-icon">
+
+<body>
+
+    <nav align="center">
+        <a href="index.html">Inicio</a>
+    </nav>
+
+    <h1 align="center">Formularios</h1>
+
+    <form>
+
+        <h1>Formulario estructurado</h1> <br>
+        <fieldset>
+
+            <legend>Datos personales</legend>
+            <label>Nombre </label> <br>
+            <input type="text" maxlength="15">
+            <br> <br>
+
+            <label>Apellidos </label> <br>
+            <input type="text" maxlength="12">
+            <br> <br>
+
+            <label>DNI </label> <br>
+            <input type="number">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de conexión </legend>
+            <label>Nombre de usuario </label> <br>
+            <input type="text" maxlength="20">
+            <br> <br>
+
+            <label> Contraseña </label> <br>
+            <input type="password">
+            <br> <br>
+
+            <label> Repite la contraseña </label> <br>
+            <input type="password">
+            <br> <br>
+        </fieldset>
+
+    </form>
+    <br><br><br><br>
+
+    <form>
+        <h1>Formulario de pago</h1> <br>
+        <fieldset>
+            <legend>MIS DATOS: </legend>
+            <ol>
+                <li><label>Nombre: </label></li>
+                <input type="text" placeholder="Escriba aquí su nombre" maxlength="15">
+                <li><label>Correo electrónico: </label></li>
+                <input type="email" placeholder="ejemplo@dominio.com" required>
+                <li><label>Teléfono: </label></li>
+                <input type="number" placeholder="ej. +573122738021">
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dirección: </legend>
+            <ol>
+                <li><label>Dirección: </label></li>
+                <textarea style="resize:vertical" ; name="Sugerencias"></textarea>
+                <li><label>Código postal: </label></li>
+                <input type="text" placeholder="CP">
+                <li><label>Ciudad: </label></li>
+                <input type="text" placeholder="Ciudad">
+            </ol>
+        </fieldset>       
+        <fieldset>
+            <legend>Formas de pago</legend>
+            <ol><li>
+            <fieldset>
+            
+                
+                    <legend>Tarjetas de crédito</legend>
+                    
+                       
+                    <ul><li><input type="radio" name="Tarjeta" value="VISA"> Visa <br></li> </ul>
+                    <ul><li><input type="radio" name="Tarjeta" value="American express"> American Express</li></ul>
+                    <ul><li><input type="radio" name="Tarjeta" value="MasterCard"> MasterCard</li></ul>
+                    
+                
+                
+            </fieldset>
+            <br>
+
+                <li><label>Número de tarjeta </label></li>
+                <input type="number" placeholder="Número tarjeta"></li>
+
+                <li><label>Código de seguridad </label></li>
+                <input type="number" placeholder="Código seguridad"></li>
+
+                <li><label>Nombre tarjeta </label></li>
+                <input type="text" placeholder="Nombre exacto tarjeta"></li>
+            </li></ol>
+        </fieldset>
+        <br>
+        <button type="submit">Comprar</button>
+    </form>
+
+    <br><br><br><br>
+
+    <form>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="5" colspan="3" bgcolor="pink">SUPERMERCADOS "LA VENDEDORA"</th>
+                    <th colspan="2"></th>
+                    <th colspan="2">25/04/2011</th>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        N° Fra.: 2456/00
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <label>Cliente:</label>
+                    </th>
+                    <th>
+                        <input type="text">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <label>RUC:</label>
+                    </th>
+                    <th>
+                        <input type="Number">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <label>Dirección:</label>
+                    </th>
+                    <th>
+                        <input type="text">
+                    </th>
+                </tr>
+                <tr>
+                    <th>CÓDIGO</th>
+                    <th>CANTIDAD</th>
+                    <th colspan="3">CONCEPTO</th>
+                    <th>PRECIO</th>
+                    <th>IMPORTE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A23</td>
+                    <td>20</td>
+                    <td colspan="3">LAPICES</td>
+                    <td>25</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>A45</td>
+                    <td>100</td>
+                    <td colspan="3">BORRADORES</td>
+                    <td>10</td>
+                    <td>1.000</td>
+                </tr>
+                <tr>
+                    <td>------------</td>
+                    <td>------------</td>
+                    <td colspan="3">------------</td>
+                    <td>------------</td>
+                    <td>------------</td>
+                </tr>
+                <tr>
+                    <td>------------</td>
+                    <td>------------</td>
+                    <td colspan="3">------------</td>
+                    <td>------------</td>
+                    <td>------------</td>
+                </tr>
+                <tr>
+                    <td>------------</td>
+                    <td>------------</td>
+                    <td colspan="3"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" rowspan="4"></td>
+                    <td>Importe</td>
+                    <td>1.500</td>
+                </tr>
+                <tr>
+                    <td>Descuento</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>Base imponible</td>
+                    <td>1.425</td>
+                </tr>
+                <tr>
+                    <td>I.V.A</td>
+                    <td>228</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="6">TOTAL FACTURA</th>
+                <td>1.653</td>
+            </tfoot>
+        </table>
+    </form>
+
+    <br><br><br>
+
+    <form>
+        <table border="1">
+            <thead>
+                <th colspan="8" bgcolor="lightgreen" style="padding: 20px;", style="color: white;">Machote de Inventario de Personal</th>
+                <tr>
+                    <th colspan="8">Inventario Personal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th bgcolor="lightblue">
+                        <label>NOMBRE</label>
+                    </th>
+                    <td colspan="7">
+                        <input type="text" style="width:98%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th bgcolor="lightblue">
+                        <label>DIRECCIÓN</label>
+                    </th>
+                    <td colspan="7">
+                        <input type="text" style="width:98%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label bgcolor="lightblue">TELÉFONO</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <th colspan="2" bgcolor="lightblue">
+                        <label>ESTADO CIVIL</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" bgcolor="lightblue">
+                        <label>COMPAÑÍA DE SEGUROS</label>
+                    </th>
+                    <td colspan="4">
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" bgcolor="gray">.</td>
+                </tr>
+                <tr>
+                    <th colspan="3" bgcolor="lightblue">
+                        ESTADO GENERAL DE SALUD
+                    </th>
+                    <td colspan="5" style="text-align:center;">
+                        Marca con una X la opción
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>HEPATITIS</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td colspan="2">
+                        <label>GASTRITIS</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <label>ASMA</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>ANEMIAS</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td colspan="2">
+                        <label>DIABETES</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <label>ALERGIAS</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>HIPE ARTERIAL</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td colspan="2">
+                        <label>HIPO ARTERIAL</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <label>OTRO:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Especifique cuál">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>CELIACO</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td colspan="2">
+                        <label>EPLIPSIA</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="8" bgcolor="gray">.</td>
+                </tr>
+                <tr>
+                    <th colspan="8" bgcolor="lightblue">
+                            EXPERIENCIA LABORAL
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>EMPRESA</label>
+                    </td>
+                    <td colspan="6">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>NOMBRE DEL PUESTO</label>
+                    </td>
+                    <td colspan="6">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>FUNCIONES DEL PUESTO</label>
+                    </td>
+                    <td colspan="6">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="8" bgcolor="gray">.</td>
+                </tr>
+                <tr>
+                    <th colspan="8" bgcolor="lightblue">
+                        FORMACIÓN ACADÉMICA
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>ESCOLARIDAD</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>ESCUELA</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>PROFESIÓN</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th colspan="8" bgcolor="lightblue">ESTUDIOS ADICIONALES</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>ENTIDAD O ESCUELA</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>TITULO</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                                        <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" bgcolor="gray">.</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="8" bgcolor="lightblue">
+                        INFORMACIÓN ADICIONAL
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>PUESTO</label>
+                    </th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>N° EMPLEADO</label>
+                    </th>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                    <td>
+                        <input type="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>N° AÑOS EN EL PUESTO</label>
+                    </th>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>PUESTOS ANTERIORES</label>
+                    </th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>COMENTARIOS</label>
+                    </th>
+                    <td colspan="6">
+                        <textarea rows="5" placeholder="Deja tu comemtario"></textarea>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    
+
+
+
+
+
+</body>
+</html>
+    
+
+</body>
+
+</html>
